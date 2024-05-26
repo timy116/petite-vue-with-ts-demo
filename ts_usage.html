@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Type Script Exercise</title>
+</head>
+<body>
+<pv-button>你好</pv-button>
+<pv-button icon="mdi:tooltip" type="success" border="circle"></pv-button>
+<div v-scope="pvButton({
+    slot: 'Button',
+    type: 'success',
+    border: 'round',
+    icon: 'pv-icon-like',
+    click: 'pvButtonClick'})"></div>
+<script type="module" lang="ts" src="src/js/usage.ts"></script>
+</body>
+</html>
